@@ -1,0 +1,18 @@
+Project:
+ Name: StyleSheetDemo_Design
+ ProjectNamespaceIndex: 4
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.3
+ CoreVersion: 3.0
+ Dependencies:
+  2:
+   Uri: StyleSheetDemo
+   RelativePath: StyleSheetDemo.optix
+  3:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 3.0
+ Nodes: []
