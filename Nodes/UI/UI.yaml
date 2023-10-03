@@ -237,6 +237,19 @@ Children:
         Value: "#f3c677"
     - Name: MyInputBoxStyle
       Type: InputBoxStyle
+      Children:
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Young Serif"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1c72e9"
   - Name: SwitchStyles
     Type: BaseObjectType
     Children:
@@ -327,6 +340,86 @@ Children:
     Children:
     - Name: Default
       Type: LabelStyle
+    - Name: Title1
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0f4fa7"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 50.0
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Young Serif"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: Title2
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1c72e9"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Young Serif"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 30.0
+    - Name: Paragraph
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1c72e9"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Roboto Light"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 15.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+    - Name: Emph
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1c72e9"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Lucida Handwriting"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 15.0
   - Name: FocusGlowSize
     Type: BaseDataVariableType
     DataType: Size
@@ -565,6 +658,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Color
         Value: "#c58516"
+    - Name: MyInputBoxStyle
+      Type: InputBoxStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Young Serif"
   - Name: SwitchStyles
     Type: BaseObjectType
     Children:
@@ -655,6 +759,70 @@ Children:
     Children:
     - Name: Default
       Type: LabelStyle
+    - Name: Title1
+      Type: LabelStyle
+      Children:
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Young Serif"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#95bcf3"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 50.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: Title2
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#bbd4f7"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Young Serif"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 30.0
+    - Name: Paragraph
+      Type: LabelStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 15.0
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Roboto Light"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: Emph
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+        Value: "Lucida Handwriting"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 15.0
   - Name: FocusGlowSize
     Type: BaseDataVariableType
     DataType: Size

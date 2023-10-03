@@ -661,108 +661,368 @@ Children:
   Supertype: Screen
   ReferenceType: HasComponent
   Children:
-  - Name: SpinBox1
-    Type: SpinBox
+  - Name: MainTitle
+    Type: Label
     Children:
-    - Name: Value
+    - Name: Text
       Type: BaseDataVariableType
-      DataType: Double
-      Value: 0.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
+      DataType: LocalizedText
       ModellingRule: Optional
-      Value: 250.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
+      Value: {"LocaleId":"en-US","Text":"My main title"}
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
       ModellingRule: Optional
-      Value: 70.0
+      Value: "Title1"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 90.0
+      Value: 20.0
+  - Name: Subtitile
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"My SubTitle"}
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Title2"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 68.0
+  - Name: Emph
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"<<Phrase in emphasis>>"}
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Emph"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 120.0
-    - Name: ButtonStyle
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "Accent"
-    - Name: InputBoxStyle
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "DangerousInput"
-  - Name: Button1
-    Type: Button
+  - Name: Paragraph
+    Type: Label
     Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Button1"}
+      Value: {"LocaleId":"en-US","Text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar orci quis laoreet placerat. Aliquam erat volutpat. Donec sit amet rutrum augue. Donec vel erat tincidunt, ornare ex a, pulvinar justo. Donec fringilla felis leo. Maecenas pulvinar, justo in faucibus vulputate, ex justo tempor velit, at semper mi turpis vulputate mi. Nulla pellentesque justo in rutrum venenatis. Vestibulum porttitor pretium maximus. Duis congue gravida enim et blandit. Nunc vehicula tortor arcu, sed semper velit consequat non. Pellentesque finibus ligula maximus lorem venenatis, sed lacinia neque eleifend. Vivamus iaculis arcu nec urna volutpat, ut auctor nisi condimentum. Maecenas maximus ultrices sollicitudin.\n\nSed in porttitor velit. In enim leo, lacinia ut risus et, rutrum tincidunt est. Ut augue odio, rutrum sed est et, tincidunt congue velit. Nullam porta augue id enim dignissim pretium. Donec vitae dolor vel metus laoreet aliquam. Morbi pharetra pulvinar libero sed vehicula. Morbi lobortis lacus at sem euismod, non iaculis enim rhoncus. Curabitur ante nulla, accumsan non fringilla quis, fringilla ut odio. Fusce elit nibh, condimentum id luctus non, gravida nec nisl. Sed sit amet vehicula massa. In id dui sem. Curabitur semper ante et faucibus luctus. Maecenas feugiat semper nibh, eget viverra lectus. "}
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Paragraph"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 146.0
+    - Name: WordWrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 90.0
+      Value: 500.0
+  - Name: EditableLabel1
+    Type: EditableLabel
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Editable sub titile"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 510.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 490.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 80.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 690.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 180.0
-    - Name: Style
+      Value: 30.0
+    - Name: LabelStyle
       Type: BaseDataVariableType
       DataType: String
       ModellingRule: Optional
-      Value: "Emergency"
-  - Name: TextBox1
-    Type: TextBox
-    Children:
-    - Name: Text
+      Value: "Title2"
+    - Name: InputBoxStyle
       Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      DataType: String
+      ModellingRule: Optional
+      Value: "MyInputBoxStyle"
+  - Name: ButtonGrid
+    Type: Panel
+    Children:
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 110.0
-    - Name: Style
-      Type: BaseDataVariableType
-      DataType: String
+      Value: 640.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
       ModellingRule: Optional
-      Value: "Default"
+      Value: 800.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 320.0
+      Value: 640.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 350.0
-    - Name: Style (Button)
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 0
-    - Name: Style (InputBox)
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 0
+      Value: 0.0
+    - Name: Button1
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"AccentButton"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 170.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Accent"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+    - Name: Button2
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"BorderedCircular"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 130.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 170.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 170.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "BorderedCircular"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+    - Name: Button3
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"BorderedRectangular"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 330.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 170.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "BorderedRectangular"
+    - Name: Button4
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Emergency"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 89.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 439.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 111.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Emergency"
+    - Name: Button5
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Good operation"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 59.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 570.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 170.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "GoodOperation"
+    - Name: Button6
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Dangerous operation"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 260.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 570.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 210.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "DangerousOperation"
