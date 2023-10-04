@@ -250,6 +250,10 @@ Children:
         Type: BaseDataVariableType
         DataType: Color
         Value: "#1c72e9"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eee9e9"
   - Name: SwitchStyles
     Type: BaseObjectType
     Children:
@@ -1376,6 +1380,22 @@ Children:
     - Name: Panels
       Type: BaseObjectType
       Children:
+      - Name: Panel2
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"DesignTime"}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"31db34be12c9b0f7fd807dbd6d50f3e6","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
       - Name: Panel1
         Type: NavigationPanelItem
         Children:
@@ -1387,22 +1407,6 @@ Children:
           Type: NodePointer
           DataType: NodeId
           Value: {"IdType":2,"Id":"3173679baee4be40122b06fbd03dc441","Namespace":7}
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
-      - Name: Panel2
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"DesignTime (TODO)"}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: {"IdType":2,"Id":"31db34be12c9b0f7fd807dbd6d50f3e6","Namespace":7}
           Children:
           - Name: Kind
             Type: PropertyType

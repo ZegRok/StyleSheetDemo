@@ -20,7 +20,7 @@ Project:
   4:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 5.1
+   Version: 5.2
   5:
    Uri: 'urn:FTOptix:NativeUI'
    Module: FTOptix.NativeUI

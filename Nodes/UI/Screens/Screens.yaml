@@ -1,7 +1,7 @@
 Name: Screens
 Type: ScreensCategoryFolder
 Children:
-- Name: First
+- Name: Runtime
   Id: g=3173679baee4be40122b06fbd03dc441
   Supertype: Screen
   ReferenceType: HasComponent
@@ -656,7 +656,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 242.0
-- Name: Second
+- Name: DesignTime
   Id: g=31db34be12c9b0f7fd807dbd6d50f3e6
   Supertype: Screen
   ReferenceType: HasComponent
